@@ -1,0 +1,9 @@
+INSTRUCTIONS TO RUN THE PROJECT IN ANY SYSTEM
+
+STEP 1: Load the Source code and database file in the a server machine]
+
+STEP 2: Connect the client systems with the server
+
+STEP 3: Type the folllowing in the url of any browser
+
+http://SERVER_IP_ADDRESS:8084/E-content-development/home.jsp

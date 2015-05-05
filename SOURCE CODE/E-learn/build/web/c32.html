@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>VIEW UPLOADED DATA</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+        <link type="text/css" rel="stylesheet" href="style.css"/>
+        
+        <style>
+            body {background-image:url('images/plain.jpg');}
+        </style>
+        <script LANGUAGE="JavaScript">
+            function ValidateForm(form){
+                ErrorText= "";
+                if ( ( form.id[0].checked == false ) && ( form.id[1].checked == false ) && ( form.id[2].checked == false ) ) 
+                {
+                    alert ( "Please Select Check Boxes" ); 
+                    return false;
+                }
+                if (ErrorText= "") { form.submit() }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <div id="top">
+                    <div id="logo">
+                        <h2><p>MULTIMEDIA </p><p>QA</p><p>SERVICE</p></h2>
+                    </div>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="ClientMainForm.jsp">HOME</a></li>
+                            <li><a href="AskQuery.jsp">ASK Q</a></li>
+                            <li><a href="My Queries.jsp">MY Q</a></li>
+                            <li><a href="ReRanking.jsp">RE_RANK</a></li>
+                            <li><a href="Logout.jsp">SIGN OUT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="content" align="center"><br/><br/>
+                <h1>Beyond Text QA: Multimedia Answer Generation by Harvesting Web Information</h1>
+            </div><br/><br/>
+            <p align="center"><font face="monotype corsiva" size="5" color="Blue"><b>CLIENT QUERY DETAILS</b></font></p>
+            <br/><blink><font size="4" color="green"></font></blink>
+            <br/><center><table border="1" align="center">
+                    <tr><td><font color=black size=4>S NO</font></td><td></td><td><font color=black size=4>USER</font></td><td></td><td><font color=black size=4>QUESTION</font></td><td></td><td><font color=black size=4>DESCRIPTION</font></td></tr>
+
+                    <tr><td><font color="blue" size="3">3</font></td><td></td>
+                        <td><font color="blue" size="3">mani89</font></td><td></td>
+                        <td><font color="blue" size="3">What is Smoke testing</font></td><td></td>
+                        <td><font color="blue" size="3">Need Definition about Smoke testing</font></td><td></td>
+                    </tr>                </table></center><br/><br/>
+            <center><form method="post" name="myform" ACTION="ViewData.jsp?value=3">
+                    <input type="checkbox" name="id" value="td"/><font face="monotype corsiva" size="3" color="BLUE"><b>TEXT DATA</b></font>&nbsp;&nbsp;
+                    <input type="checkbox" name="id" value="md"/><font face="monotype corsiva" size="3" color="BLUE"><b>IMAGE FILE</b></font>&nbsp;&nbsp;
+                    <input type="checkbox" name="id" value="vd"/><font face="monotype corsiva" size="3" color="BLUE"><b>VIDEO FILE</b></font>&nbsp;&nbsp;
+                    <input type="submit" value="SELECT" onClick="ValidateForm(this.form)"/>
+                </form></center><br/><br/>
+
+            
+            <p align="center"><font face="monotype corsiva" size="5" color="GREEN"><b>TEXT DATA</b></font></p><br/>
+            <center><table border="1" align="center">
+                    <tr><td><center><font color=black size=4>S NO</font></center></td><td></td><td><center><font color=black size=4>SENDER</font></center></td><td></td><td><center><font color=black size=4>SOLUTION</font></center></td><td></td><td><center><font color=black size=4>FEEDBACK</font></center></td></tr>
+
+                    <tr><td><font color="blue" size="3">1</font></td><td></td>
+                        <td><font color="blue" size="3">mani89</font></td><td></td>
+                        <td><font color="blue" size="3">It is a testing process which starts during the requirement phase itself</font></td><td></td>
+                        
+                   <td><li><a href="Like-Unlike.jsp?s1=1&&val=like&&value=3&&kvalue=td&&p1=ViewData"><font color="GREEN">LIKE</font></a></li></td><td></td>
+                        
+                   
+                    </tr>                </table></center>
+            <br/><br/><br/>
+        </div>
+            <br/>
+    </body>
+</html>
